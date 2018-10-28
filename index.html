@@ -21,10 +21,10 @@
 <body>
 
   <noscript id="deferred-styles">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.transitions.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
   </noscript>
 
@@ -316,6 +316,8 @@
 
   <script>
     var loadDeferredStyles = function () {
+      console.log('loadDeferredStyles');
+      
       var addStylesNode = document.getElementById("deferred-styles");
       var replacement = document.createElement("div");
       replacement.innerHTML = addStylesNode.textContent;
